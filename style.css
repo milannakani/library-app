@@ -1,0 +1,36 @@
+* {
+    max-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    text-align: center;
+    padding: 1rem;
+    color: grey;
+}
+.signupForm {
+    display: none;
+    position: fixed;
+    border: 3px solid #f1f1f1; 
+  }
+  .books {
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    border: 2px solid rgb(200,200,200);
+    font-size: 1rem;
+  }
+  th {
+    padding: 10px;
+  }
+  .newButton {
+    display: flex;
+    padding: 10px;
+    height: 40px;
+    justify-content: center;
+  }

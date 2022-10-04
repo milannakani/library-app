@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1 class="title">My Library</h1>
@@ -19,8 +21,21 @@
         </tr>
     </table>
     <div class="newButton">
-        <button class="add">Add New Book</button>
+        <button class="add" onclick="openForm()">Add New Book</button>
     </div>
+        <div class="signupForm" id="signup">
+        <form action="#" method="get" class="form-container">
+            <label for="bookname">Book Name:</label>
+            <input type="text" id="bookname" name="bookname">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+            <label for="pages">Pages:</label>
+            <input type="text" id="pages" name="pages">
+            <label for="readButton">Read:</label>
+            <input type="checkbox" name="readButton" id="readButton">
+            <button type="submit" class="submit" name="submit">Add Book</button>
+        </form>
+        </div>
 </div>
 </body>
 </html>
