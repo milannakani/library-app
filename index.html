@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <th class="btitle">Book</th>
             <th>Author</th>
             <th>Number of Pages</th>
-            <th>Reading Done</th>
+            <th>Reading Status</th>
             <th>Delete</th>
         </tr>
         <tbody id="tableBody"></tbody>
@@ -27,14 +27,17 @@
         <div class="signupForm" id="signup">
         <form action="#" method="get" class="form-container">
             <label for="bookname">Book Name:</label>
-            <input type="text" id="bookname" name="bookname">
+            <input type="text" id="bookname" name="bookname" required>
             <label for="author">Author:</label>
-            <input type="text" id="author" name="author">
+            <input type="text" id="author" name="author" required>
             <label for="pages">Pages:</label>
-            <input type="text" id="pages" name="pages">
-            <label for="readButton">Read:</label>
-            <input type="checkbox" name="readButton" id="readButton">
-            <button type="submit" class="submit" name="submit">Add Book</button>
+            <input type="number" id="pages" name="pages" required>
+            <label for="status">Status</label>
+            <select name="status" id="status" class="u-full-width">
+              <option value="read">Read</option>
+              <option value="not read">Not read</option>
+            </select>
+            <input type="submit" value="Add Book">
         </form>
         </div>
 </div>
